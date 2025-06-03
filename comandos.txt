@@ -1,0 +1,2 @@
+--dry-run // comando para ver los cambios que se van a hacer
+--spec=false // para no generar el spec
