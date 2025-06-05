@@ -23,6 +23,18 @@ const routes: Routes = [
   {
     path: 'card',
     loadChildren: () => import('./paginas/card/card.module').then( m => m.CardPageModule)
+  },
+  {
+    path: 'checkbox',
+    loadChildren: () => import('./paginas/checkbox/checkbox.module').then( m => m.CheckboxPageModule)
+  },
+  {
+    path: 'chip',
+    loadChildren: () => import('./paginas/chip/chip.module').then( m => m.ChipPageModule)
+  },
+  {
+    path: 'fab',
+    loadChildren: () => import('./paginas/fab/fab.module').then( m => m.FabPageModule)
   }
 ];
 @NgModule({

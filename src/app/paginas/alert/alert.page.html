@@ -1,12 +1,4 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>alert</ion-title>
-    <ion-buttons slot="end"  >
-      <ion-back-button defaultHref="/" slot="end" text="regresar" color="success"></ion-back-button> 
-    </ion-buttons>
-    
-  </ion-toolbar>
-</ion-header>
+<app-header [titulo]="'alert'" [defaultHref]="'/'" [backText]="'regresar'" [backColor]="'success'" ></app-header>
 
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
@@ -14,4 +6,12 @@
       <ion-title size="large">alert</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-button id="present-alert">Click Me</ion-button>
+  <ion-alert
+    trigger="present-alert"
+    header="A Short Title Is Best"
+    subHeader="A Sub Header Is Optional"
+    message="A message should be a short, complete sentence."
+    [buttons]=""
+  ></ion-alert>
 </ion-content>

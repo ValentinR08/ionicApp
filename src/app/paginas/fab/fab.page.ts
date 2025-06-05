@@ -2,16 +2,15 @@ import { Component, OnInit } from '@angular/core';
 import { IonicModule } from '@ionic/angular';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
-
 import { ComponentesModule } from '../../componentes/componentes.module';
+
 @Component({
-  selector: 'app-card',
-  templateUrl: './card.page.html',
-  styleUrls: ['./card.page.scss'],
-  imports: [CommonModule, IonicModule, RouterModule, ComponentesModule ], 
-  
+  selector: 'app-fab',
+  templateUrl: './fab.page.html',
+  styleUrls: ['./fab.page.scss'],
+  imports: [CommonModule, IonicModule,RouterModule, ComponentesModule],
 })
-export class CardPage implements OnInit {
+export class FabPage implements OnInit {
 
   constructor() { }
 
