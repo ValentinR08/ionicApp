@@ -10,9 +10,13 @@
       <ion-title size="large">inicio</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button routerLink="/alert">Alert</ion-button>
-  <ion-button routerLink="/card">card</ion-button>
-  <ion-button routerLink="/checkbox">checkbox</ion-button>
-  <ion-button routerLink="/chip">chip</ion-button>
-  <ion-button routerLink="/fab">fab</ion-button>
+  
+  <ion-list>
+    <ion-button *ngFor="let element of Elementos"  [routerLink]="element.redirectTo" color="success">
+      {{ element.nombre }}
+    </ion-button>
+  </ion-list>
+  <ion-list>
+    <ion-item detail *ngFor="let element of Elementos"  [routerLink]="element.redirectTo" ><ion-icon name="{{element.icon}}" slot="start" color="success" ></ion-icon>  {{element.nombre}}</ion-item>
+  </ion-list>
 </ion-content>

@@ -6,12 +6,27 @@
       <ion-title size="large">alert</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-button id="present-alert">Click Me</ion-button>
+  <ion-button (click)="showAlert()" > Controller Alert</ion-button>
+  <ion-button id="input-alert">Input Alert</ion-button>
   <ion-alert
-    trigger="present-alert"
-    header="A Short Title Is Best"
-    subHeader="A Sub Header Is Optional"
-    message="A message should be a short, complete sentence."
-    [buttons]=""
+    trigger="input-alert"
+    header="Please enter your info"
+    [buttons]="alertButtons"
+    [inputs]="alertInputs"
   ></ion-alert>
+
+  <ion-button id="console-alert">Console Alert</ion-button>
+<ion-alert
+  trigger="console-alert"
+  header="Alert!"
+  [buttons]="ConsoleButtons"
+  (didDismiss)="setResult($event)"
+></ion-alert>
+
+  <ion-button (click)="showAlertPersonalizada()">AlertaPersonalizada</ion-button>
+  
+
+
+
+  
 </ion-content>
