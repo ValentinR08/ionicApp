@@ -6,6 +6,11 @@ import { IonicModule } from '@ionic/angular';
 
 import { ComponentesModule } from 'src/app/componentes/componentes.module';
 
+interface alumno{
+  nombre:string;
+  beca: 'false' | 'true';
+}
+
 @Component({
   selector: 'app-checkbox',
   templateUrl: './checkbox.page.html',
@@ -17,6 +22,10 @@ export class CheckboxPage implements OnInit {
 
   constructor() { }
 
+  alumnos: alumno[] = [
+    { nombre: 'Juan', beca: 'false' },
+    { nombre: 'Pedro', beca: 'true' },
+  ]
   ngOnInit() {
   }
 
