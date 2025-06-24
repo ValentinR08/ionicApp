@@ -23,8 +23,10 @@ export class DatetimePage implements OnInit {
     const dateObj = new Date(event.detail.value);
     console.log('Día seleccionado:', dateObj.getDate());
     console.log('Fecha legible:', dateObj.toLocaleDateString()); 
-    
-  }
+    console.log(event);
+    console.log(event.detail);
+    console.log(event.detail.value);
+    }
 
   constructor() { }
 
