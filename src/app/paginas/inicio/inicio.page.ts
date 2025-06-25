@@ -24,7 +24,8 @@ export class InicioPage implements OnInit {
     { nombre: 'Checkbox', redirectTo: '/checkbox', icon: 'checkbox-outline'},
     { nombre: 'Chip', redirectTo: '/chip', icon: 'hardware-chip-outline' },
     { nombre: 'Fab', redirectTo: '/fab', icon: 'add-circle-outline' },
-    { nombre: 'datetime', redirectTo: '/datetime', icon: 'date-time-outline' },
+    { nombre: 'datetime', redirectTo: '/datetime', icon: 'calendar-outline' },
+    { nombre: 'grid', redirectTo: '/grid', icon: 'grid-outline' },
 
   ];
     

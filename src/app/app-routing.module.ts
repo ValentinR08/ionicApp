@@ -39,6 +39,10 @@ const routes: Routes = [
   {
     path: 'datetime',
     loadChildren: () => import('./paginas/datetime/datetime.module').then( m => m.DatetimePageModule)
+  },
+  {
+    path: 'grid',
+    loadChildren: () => import('./paginas/grid/grid.module').then( m => m.GridPageModule)
   }
 ];
 @NgModule({
